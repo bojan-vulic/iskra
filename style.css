@@ -1,0 +1,273 @@
+/*
+
+Theme Name: Iskra 
+Description: Simple blog theme
+Author: Bojan Vulic
+Version: 1.0
+Tags:black,white,responsive,two-columns,featured-images,custom-menu,post-formats
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+:root {
+    --fontFamily: 'Roboto Condensed', sans-serif;
+    --primaryColor: rgb(40, 10, 80);
+    --secondaryColor: rgb(93, 97, 99);
+    --white: #fff;
+    --blue: rgb(70, 154, 250);
+    --fontSize: 16px;
+    --transition: .3s ease;
+    --borderRadius: 5px;
+    --boxShadow: 0 5px 15px rgb(143, 140, 140);
+    --marginTop: 50px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fontFamily);
+    font-size: var(--fontSize);
+    color: var(--secondaryColor);
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--primaryColor);
+}
+
+.btn {
+    background: #099ffc!important;
+    font-size: 1.2rem;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 5px;
+}
+
+.btn:hover {
+    background: var(--primaryColor)!important;
+    transition: var(--transition);
+    color: var(--white);
+}
+
+.sticky{
+    background: var(--white)!important;
+    transition: var(--transition);
+}
+
+/*****************
+navBar
+*****************/
+.navbar-brand{
+    width: 30%;
+    opacity: .8;
+}
+
+.navbar-brand img{
+    width: 70%;
+}
+
+nav{
+    background: transparent;
+}
+
+nav .nav-link{
+    color: var(--white)!important;
+    opacity: .8;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin: 0 5px;
+}
+
+nav ul{
+    background: rgba(40, 10, 80, .6);
+    padding: 5px;
+    opacity: .8;
+}
+
+/*****************
+header
+*****************/
+header{
+    height: 100vh;
+    background: url(img/header.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: .8;
+    padding-top: 75vh;
+}
+
+header h1{
+    background: rgba(40, 10, 80, .8);
+    display: inline-block;
+    color: var(--white);
+    margin-left: 40px;
+    padding: 0 10px;
+}
+
+header h3{
+    margin-left: 40px;
+}
+
+/*****************
+misijaVizija
+*****************/
+.misijaVizija .col-md-6 p{
+    font-weight: 500;
+}
+
+/*****************
+cetiriSlike
+*****************/
+.cetiriSlike{
+    padding: 10px;
+    box-shadow: var(--boxShadow);
+}
+
+.cetiriSlike img{
+    width: 100%;
+    opacity: .8;
+}
+
+/*****************
+zastoMi
+*****************/
+.zastoMi p{
+    font-size: 1.1rem;
+}
+
+/*****************
+blog
+*****************/
+.blog{
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog img{
+    width: 100%;
+    height: auto;
+}
+
+.blog article{
+    flex: 0 0 32%;
+}
+.pagination {
+    justify-content: center;
+    margin-top: 30px;
+}
+.pagination h2 {
+    display: none;
+}
+.pagination a {
+    color: var(--white);
+    text-decoration: none;
+    background: #9789aa;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/*****************
+triSlike
+*****************/
+.triSlike{
+    display: flex;
+    justify-content: space-between;
+}
+
+.triSlike article{
+    height: 30vh;
+    flex: 0 0 32%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    opacity: .8;
+}
+
+.triSlike h2{
+    color: var(--white);
+    font-size: 3rem;
+    text-shadow: 2px 2px black;
+}
+
+
+
+
+.triSlike article:nth-child(1){
+    background:url(img/home-1.jpg);
+    background-size: auto;
+    background-position: center;
+}
+
+.triSlike article:nth-child(2){
+    background:url(img/home-2.jpg);
+    background-size: auto;
+    background-position: center;
+}
+
+.triSlike article:nth-child(3){
+    background:url(img/home-3.jpg);
+    background-size: auto;
+    background-position: center;
+}
+
+/***************
+footer 
+****************/
+footer{
+    background: linear-gradient(rgba(40,10,80,1), rgba(40,10,8,0.6)),var(--primaryColor);
+}
+
+footer i{
+    font-size: 2rem;
+    color: var(--white);
+    margin-right: 15px;
+}
+
+footer i:hover{
+    color: var(--secondaryColor);
+    transform: rotate(15deg);
+    transition: var(--transition);
+}
+
+.footerBottom p{
+    margin-bottom: 0!important;
+    color: var(--white);
+    font-size: .9rem;
+}
+footer h2{
+    color: var(--white)!important; 
+}
+footer a {
+    color:#9789aa;
+    text-decoration: none;
+}
+footer a:hover {
+    color: var(--white);
+}
+/***************
+slikaZaNaslove 
+****************/
+.slikaZaNaslove {
+    height: 50vh;
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url(img/blog-background-2.jpg);
+    background-position: center;
+    background-size: cover;  
+}
+ .slikaZaNaslove h1{
+    background: rgba(40, 10, 80, .8);
+    display: inline-block;
+    color: var(--white);
+    margin-left: 40px;
+    padding: 10px 20px;
+     opacity: .8;
+}
+singlePage article{
+    width: 80%;
+    margin: auto;
+}
